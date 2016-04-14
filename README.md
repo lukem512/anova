@@ -4,6 +4,12 @@
 
 An NPM module providing the Analysis of Variance (ANOVA) parametric statistical test. When performing ANOVA, individual observations (values) are grouped into treatments (samples, arrays of values). The analysis is performed on an array of treatments and results in an F-value. Additional values, such as the Sum of Squares, can be computed using the functions described below.
 
+To use it, simply install via NPM and include it in your project file.
+
+```
+	var anova = require('anova');
+```
+
 To compute the F-test of an array of samples use the `test` function:
 
 ```
