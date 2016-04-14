@@ -1,0 +1,40 @@
+{
+  "name": "anova",
+  "version": "1.0.0",
+  "description": "Analysis of Variance (ANOVA)",
+  "main": "src/anova.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "statistical-methods": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukem512/anova.git"
+  },
+  "keywords": [
+    "analysis",
+    "variance",
+    "anova",
+    "statistics",
+    "stats",
+    "parametric",
+    "mean",
+    "square",
+    "square",
+    "sums",
+    "degree",
+    "freedom"
+  ],
+  "author": "Luke Mitchell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukem512/anova/issues"
+  },
+  "homepage": "https://github.com/lukem512/anova"
+}
