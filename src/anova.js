@@ -50,18 +50,48 @@ var DF = module.exports.DF = function(samples) {
 };
 
 // Comptute the Mean Square
-var MS = module.exports.MS = function(samples) {
+var MS = module.exports.MS = function(samples, verbose) {
 	var ss = SS(samples);
 	var df = DF(samples);
 
-	return {
+	var results = {
 		treatment: ss.treatment / df.treatment,
 		residual: ss.residual / df.residual
 	};
+
+	if (verbose) {
+		results.ss = ss;
+		results.df = df;
+	}
+
+	return results;
 };
 
 // Compute the F-test for one way ANOVA
 var test = module.exports.test = function(samples) {
 	var ms = MS(samples);
 	return ms.treatment / ms.residual;
+};
+
+// Output the ANOVA table
+var table = module.exports.table = function(samples) {
+	var ms = MS(samples, true);
+
+	return {
+		treatment: {
+			SS: ms.ss.treatment,
+			DF: ms.df.treatment,
+			MS: ms.treatment,
+			F:  ms.treatment / ms.residual
+		},
+		residual: {
+			SS: ms.ss.residual,
+			DF: ms.df.residual,
+			MS: ms.residual
+		},
+		total: {
+			SS: ms.ss.total,
+			DF: ms.df.total
+		}
+	};
 };
