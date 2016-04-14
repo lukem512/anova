@@ -1,8 +1,8 @@
 # ANOVA
 
-An NPM module providing the Analysis of Variance (ANOVA) parametric statistical test.
+[![Build Status](https://travis-ci.org/lukem512/anova.svg?branch=master)](https://travis-ci.org/lukem512/anova) ![Build Status](https://david-dm.org/lukem512/anova.svg) [![npm](https://img.shields.io/npm/l/anova.svg)](https://www.npmjs.com/package/anova) [![npm](https://img.shields.io/npm/v/anova.svg)](https://www.npmjs.com/package/anova) [![npm](https://img.shields.io/npm/dm/anova.svg)](https://www.npmjs.com/package/anova)
 
-When performing ANOVA, individual observations (values) are grouped into treatments (samples, arrays of values). The analysis is performed on an array of treatments and results in an F-value. Additional values, such as the Sum of Squares, can be computed using the functions described below.
+An NPM module providing the Analysis of Variance (ANOVA) parametric statistical test. When performing ANOVA, individual observations (values) are grouped into treatments (samples, arrays of values). The analysis is performed on an array of treatments and results in an F-value. Additional values, such as the Sum of Squares, can be computed using the functions described below.
 
 To compute the F-test of an array of samples use the `test` function:
 
