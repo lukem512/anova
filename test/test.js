@@ -51,7 +51,7 @@ var tests = [
 	},
 ];
 
-var passed = true;
+var returnCode = 0;
 
 tests.forEach(function(t) {
 	try {
@@ -61,12 +61,9 @@ tests.forEach(function(t) {
 	} catch (err) {
 		if (!t.rejected) {
 			console.error(t.name, err);
-			passed = false;
+			returnCode = 1;
 		}
 	}
 });
 
-if (passed) console.log('Tests succeeded');
-else console.log('Tests failed');
-
-return passed;
+process.exit(returnCode);
