@@ -1,6 +1,6 @@
 {
   "name": "anova",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Analysis of Variance (ANOVA)",
   "main": "src/anova.js",
   "directories": {
