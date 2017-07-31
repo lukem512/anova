@@ -45,10 +45,10 @@ console.log('The error or residual MS is:', ms.residual);
 
 ### Related Modules
 
-[brown-forsythe-test](https://github.com/lukem512/brown-forsythe-test)
-[levene-test](https://github.com/lukem512/levene-test)
-[mann-whitney-utest](https://github.com/lukem512/mann-whitney-utest)
-[statistical-methods](https://github.com/lukem512/statistical-methods)
+- [brown-forsythe-test](https://github.com/lukem512/brown-forsythe-test)
+- [levene-test](https://github.com/lukem512/levene-test)
+- [mann-whitney-utest](https://github.com/lukem512/mann-whitney-utest)
+- [statistical-methods](https://github.com/lukem512/statistical-methods)
 
 ### License
 
